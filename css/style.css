@@ -1,0 +1,694 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  /* font-size: 18px; */
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+/* styling the header section */
+.navbar .navbar-brand a {
+  background-color: red;
+  font-size: 30px;
+}
+
+.navbar {
+  /* background: #000080; */
+  background: linear-gradient(
+    to right,
+    purple,
+    plum,
+    purple,
+    plum,
+    purple,
+    plum,
+    purple
+  );
+  padding: 3px;
+}
+
+/* #navbarSupportedContent ul {
+  margin-inline-start: 30%;
+} */
+#navbarSupportedContent li {
+  margin-inline: 10px;
+}
+#navbarSupportedContent a {
+  /* color: #da0c0c; */
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 18px;
+  /* font-weight: 80px; */
+}
+#navbarSupportedContent a:hover {
+  color: #000;
+}
+
+.nav-button {
+  height: 50px;
+  width: 100px;
+  background-color: purple;
+  border-radius: 100px;
+  border: 1px solid #ddd;
+  outline: none;
+}
+.nav-button a {
+  text-decoration: none;
+}
+/* styling the header section done */
+
+/* hero section */
+.hero-container {
+  background-image: url("/Asset/image/charity-image.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 90vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* padding: 20px; */
+}
+.hero-container h1 {
+  font-size: 80px;
+  /* color: #da0c0c; */
+  font-weight: 500px;
+}
+.hero-container p {
+  font-size: 20px;
+  /* color: #000080; */
+  font-weight: 500px;
+}
+.hero-container button {
+  height: 70px;
+  width: 160px;
+  color: black;
+  border-radius: 45%;
+  font-size: 18px;
+  /* text-decoration: none; */
+  /* background-color: blue; */
+  margin: 80px;
+}
+.items {
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  /* margin: 0 auto; */
+}
+.orphan-container {
+  background: grey;
+  color: whitesmoke;
+  padding: 20px;
+}
+.orphan {
+  border: 2px solid rgb(238, 234, 234);
+}
+.feed-container {
+  background: orange;
+  color: whitesmoke;
+  padding: 20px;
+}
+.feed {
+  border: 2px solid rgb(238, 234, 234);
+}
+.education-container {
+  background: rgb(133, 43, 43);
+  color: whitesmoke;
+  padding: 20px;
+}
+.education {
+  border: 2px solid rgb(238, 234, 234);
+}
+.medical-container {
+  background: darkolivegreen;
+  color: whitesmoke;
+  padding: 20px;
+}
+.medical {
+  border: 2px solid rgb(238, 234, 234);
+}
+/* .medical-container {
+  background: darkolivegreen;
+  color: whitesmoke;
+  padding: 20px;
+}
+.medical {
+  border: 2px solid rgb(238, 234, 234);
+} */
+/* mission section */
+.our-mission {
+  margin-block-start: 80px;
+}
+.mission-text {
+  margin-block-start: 30px;
+}
+.mission-image {
+  width: min-content;
+}
+
+/* mission section done */
+.about-us {
+  /* position: relative; */
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: contain;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/Asset/image/charity-image.png);
+  /* background-color: #da0c0c; */
+  /* color: orangered; */
+  color: white;
+}
+.overlay {
+  position: absolute;
+  /* top: 100; */
+  /* left: 0; */
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(143, 61, 143, 0.4); /* Green color with transparency */
+  z-index: 1;
+}
+
+/* vocational skills page */
+.reason {
+  background: linear-gradient(
+    45deg,
+    rgb(231, 192, 231),
+    plum,
+    rgb(233, 187, 233),
+    plum,
+    rgb(250, 160, 250)
+  );
+}
+.reason-container p {
+  text-align: center;
+  font-size: 18px;
+  color: #000;
+  padding: 30px;
+}
+.form-section {
+  padding-block: 40px;
+}
+.form-section button {
+  background-color: purple;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  height: 45px;
+  border: none;
+}
+.form-section button:hover {
+  background-color: rgb(156, 68, 156);
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  height: 45px;
+  border: 1px solid rgb(73, 67, 67);
+}
+/* vocational skills page done */
+/* donation page */
+.donation-image img {
+  width: 100%;
+  height: 220px;
+}
+
+/* donation page done */
+.practice-overflow {
+  overflow: auto;
+  white-space: nowrap;
+}
+
+/* about us page */
+/* vonlunteers section */
+.volunteer-section {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.volunteer-card {
+  background: #f9f9f9;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+  width: 250px;
+}
+.volunteer-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.volunteer-info h3 {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.role {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 14px;
+  color: white;
+}
+
+.yellow {
+  background-color: #f1c40f;
+}
+
+.red {
+  background-color: #e74c3c;
+}
+
+.blue {
+  background-color: #3498db;
+}
+
+.green {
+  background-color: #2ecc71;
+}
+
+/* join-us section */
+.join-us-container {
+  /* position: relative; */
+  height: 100vh;
+  max-width: 100%;
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  background-position: center;
+  background-size: contain;
+  background-image: linear-gradient(rgba(0, 1, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/Asset/image/privileged1.jpg);
+  background-color: #da0c0c;
+  /* color: orangered; */
+}
+.join-us {
+  position: relative;
+  background-color: white;
+  max-width: 50%;
+  height: 50vh;
+  top: 25%;
+}
+join-us-text {
+  position: relative;
+  top: 100%;
+}
+
+/* join-us section done */
+
+/* vonlunteers section done */
+
+/* volunteer registration */
+.volunteer-container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+  padding: 40px;
+  margin: 0 auto;
+}
+.volunteer-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.volunteer-header-title {
+  color: #005b96;
+  font-size: 28px;
+}
+.volunteer-header-description {
+  color: #555;
+  font-size: 16px;
+}
+.volunteer-form {
+  display: flex;
+  flex-direction: column;
+}
+.volunteer-form-label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+}
+.volunteer-form-input,
+.volunteer-form-select,
+.volunteer-form-textarea {
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+}
+.volunteer-form-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 20px;
+  width: 100%;
+}
+.volunteer-form-button:hover {
+  background-color: #218838;
+}
+.volunteer-footer {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+  color: #777;
+}
+
+/* volunteer registration done */
+/* about us page done */
+
+.join-us-container {
+  background-image: url("/Asset/image/privileged1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 100px 0;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  /* max-height: 500px; */
+  height: min-content;
+}
+
+.join-us {
+  background-color: #b71c1c;
+  padding: 40px;
+  text-align: center;
+  color: white;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  margin-block-end: 0%;
+}
+
+.join-us h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.join-us p {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.join-us .btn {
+  background-color: transparent;
+  border: 1px solid white;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.join-us .btn:hover {
+  background-color: white;
+  color: #b71c1c;
+}
+
+/* donation section */
+
+.donation-page {
+  background-color: #fff;
+  max-width: 900px;
+  /* width: 100%; */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+}
+.donate-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.donate-header h1 {
+  color: #007bff;
+  font-size: 32px;
+}
+.donate-header p {
+  color: #333;
+  font-size: 16px;
+}
+.donation-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+label {
+  font-weight: 600;
+  color: #333;
+  /* color: #b71c1c; */
+  font-size: 18px;
+}
+input,
+select {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+}
+.payment-options {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.payment-options label {
+  font-weight: 600;
+  color: #007bff;
+  cursor: pointer;
+  font-size: 18px;
+}
+.payment-options input {
+  margin-right: 10px;
+}
+.donate-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 20px;
+}
+.donate-button:hover {
+  background-color: #218838;
+}
+/* .footer {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+  color: #555;
+} */
+.payment-description {
+  font-size: 13px;
+  margin-top: 5px;
+  color: #666;
+}
+.custom-amount-input {
+  display: none;
+}
+
+/* .required {
+  color: red;
+}  */
+/* donation section done */
+
+/* contact us section */
+
+.contact {
+  background-image: url("/Asset/image/charity-image.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50vh;
+  color: rgb(88, 23, 88);
+  /* color: #da0c0c; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 500;
+  animation: image 5s ease-in infinite;
+  /* padding: 20px; */
+}
+.address {
+  margin-top: 100px;
+}
+.contact-form button {
+  background-color: purple;
+}
+/* footer section */
+
+.my-footer {
+  background-color: rgb(119, 58, 119);
+  color: white;
+  padding: 40px 0;
+}
+.footer h2 {
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+.my-footer p,
+.my-footer ul {
+  font-size: 17px;
+  line-height: 1.6;
+  list-style: none;
+}
+.my-footer ul li a {
+  color: white;
+  text-decoration: none;
+  margin-bottom: 10px;
+  display: inline-block;
+  transition: color 0.3s;
+}
+
+.my-footer ul li a:hover {
+  color: #3498db;
+}
+.social-icons a {
+  margin-right: 15px;
+  display: block;
+}
+
+.social-icons i {
+  font-size: 30px;
+  line-height: 1.4;
+  color: white;
+  transition: color 0.3s;
+}
+.social-icons i:hover {
+  color: #3498db;
+}
+.contact-text a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.contact-text a:hover {
+  color: #3498db;
+}
+
+@media (max-width: 768px) {
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  /* .footer-container {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .footer-section {
+    margin-bottom: 20px;
+  } */
+}
+
+@media screen and (max-width: 768px) {
+  .join-us {
+    padding: 20px 30px;
+    max-width: 400px;
+    max-height: 300px;
+  }
+
+  .join-us h2 {
+    font-size: 28px;
+  }
+
+  .join-us p {
+    font-size: 14px;
+  }
+
+  .join-us .btn {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .about-us {
+    /* position: relative; */
+    height: 180vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: contain;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(/Asset/image/charity-image.png);
+    color: white;
+  }
+  .overlay {
+    position: absolute;
+    max-width: 100%;
+    height: 180vh;
+    background-color: rgb(143, 61, 143, 0.4);
+    z-index: 1;
+  }
+  .about-text h1,
+  p {
+    text-align: center;
+    padding-inline: 20px;
+  }
+}
+@media screen and (max-width: 384px) {
+  .about-us {
+    /* position: relative; */
+    height: 190vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: contain;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(/Asset/image/charity-image.png);
+    /* background-color: #da0c0c; */
+    /* color: orangered; */
+    color: white;
+  }
+  .overlay {
+    position: absolute;
+    max-width: 100%;
+    height: 190vh;
+    background-color: rgba(
+      32,
+      32,
+      243,
+      0.7
+    ); /* Green color with transparency */
+    z-index: 1;
+  }
+  .about-text h1,
+  p {
+    text-align: center;
+    padding-inline: 20px;
+  }
+}
+@media screen and (max-width: 1029px) {
+  .join-us {
+    padding: 20px 30px;
+    max-width: 400px;
+    max-height: 350px;
+  }
+}
+
+/* example */
