@@ -61,6 +61,7 @@ body::-webkit-scrollbar {
 
 /* hero section */
 .hero-container {
+  background-image: url(../Asset/image/charity-image.png);
   /* background-image: url("./Asset/image/charity-image.png"); */
   background-size: cover;
   background-position: center;
@@ -161,7 +162,7 @@ body::-webkit-scrollbar {
   background-position: center;
   background-size: contain;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(./Asset/image/charity-image.png);
+    url(../Asset/image/charity-image.png);
   /* background-color: #da0c0c; */
   /* color: orangered; */
   color: white;
@@ -289,7 +290,7 @@ body::-webkit-scrollbar {
   background-position: center;
   background-size: contain;
   background-image: linear-gradient(rgba(0, 1, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(./Asset/image/privileged1.jpg);
+    url(../Asset/image/privileged1.jpg);
   background-color: #da0c0c;
   /* color: orangered; */
 }
@@ -375,7 +376,7 @@ join-us-text {
 /* about us page done */
 
 .join-us-container {
-  background-image: url("./Asset/image/privileged1.jpg");
+  background-image: url("../Asset/image/privileged1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -516,7 +517,7 @@ select {
 /* contact us section */
 
 .contact {
-  background-image: url("./Asset/image/charity-image.png");
+  background-image: url("../Asset/image/charity-image.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -634,7 +635,7 @@ select {
     background-position: center;
     background-size: contain;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url(./Asset/image/charity-image.png);
+      url(../Asset/image/charity-image.png);
     color: white;
   }
   .overlay {
@@ -660,7 +661,7 @@ select {
     background-position: center;
     background-size: contain;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url(./Asset/image/charity-image.png);
+      url(../Asset/image/charity-image.png);
     /* background-color: #da0c0c; */
     /* color: orangered; */
     color: white;
